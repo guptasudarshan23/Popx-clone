@@ -5,6 +5,7 @@
     "start": "node server/src/index.js",
     "server": "cross-env NODE_ENV=development nodemon server/src/index.js",
     "client": "npm run dev --prefix client",
+    "build": "cd client && npm install && npm run build",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "devDependencies": {
