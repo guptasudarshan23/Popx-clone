@@ -27,7 +27,7 @@ app.use('/api/auth', authRoutes);
 
 // Serve frontend in production
 if (process.env.NODE_ENV === "production") {
-  const frontendPath = path.join(__dirname, '../client/dist');
+  const frontendPath = path.join(__dirname, '../../client/dist');
   app.use(express.static(frontendPath));
 
   app.get('*', (_, res) => {
